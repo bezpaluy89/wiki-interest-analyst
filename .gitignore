@@ -1,0 +1,23 @@
+# Compiled binary — must not be committed (task requirement); rebuilt via `go build`.
+.claude/skills/wiki-interest-analyst/bin/
+
+# On-disk API response cache.
+.claude/skills/wiki-interest-analyst/cache/
+
+# Generated report artifacts: ignore ad-hoc runs, but keep the 3 curated
+# example reports (they showcase the deliverable; PDFs/PNGs are not binaries).
+.claude/skills/wiki-interest-analyst/examples/*.pdf
+.claude/skills/wiki-interest-analyst/examples/*.png
+.claude/skills/wiki-interest-analyst/examples/*.json
+!.claude/skills/wiki-interest-analyst/examples/.gitkeep
+!.claude/skills/wiki-interest-analyst/examples/ex1_fasting.pdf
+!.claude/skills/wiki-interest-analyst/examples/ex1_fasting.png
+!.claude/skills/wiki-interest-analyst/examples/ex2_astronomy.pdf
+!.claude/skills/wiki-interest-analyst/examples/ex2_astronomy.png
+!.claude/skills/wiki-interest-analyst/examples/ex3_english.pdf
+!.claude/skills/wiki-interest-analyst/examples/ex3_english.png
+
+# OS / editor noise.
+.DS_Store
+*.swp
+.idea/
